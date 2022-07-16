@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <a href="./products.html" target="_blank">Homepage</a> 
+    
+
+    <title>Shopping Website</title>
+        
+  </head>
+
+    <body onload="myFunction()" style="margin:0;">
+
+        <div id="loader"></div>
+        
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <h1>Wasonga Shopping Mall</h1>
+            <p>
+                Rediscover the shopping experience with Wasonga Shopping Mall
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRPHUmY1bMmNmLFEE8soxrNN59QK6mTQsbHg&usqp=CAU"
+            alt="Prodcucts">
+            <!-- Footer -->
+        <footer>
+            <ul>
+              <a href="">Instagram</a>
+              <a href="">Facebook</a>
+              <a href="">Youtube</a>
+              <a href="">LinkedIn</a>
+            </ul>
+            <p>Wasonga Shopping Mall &copy; 2022</p>
+          </footer>
+        </div>
+       
+        
+        <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+        </script>
+    </body>
+
+</html>
